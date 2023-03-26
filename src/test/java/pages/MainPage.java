@@ -11,21 +11,20 @@ public class MainPage {
     }
     @FindBy(className="appointment-btn scrollto")
     public WebElement makeAnAppointment;
-    //   //li[@id='account-menu']
-    @FindBy(xpath="//a[@class='d-flex align-items-center dropdown-toggle nav-link']") public WebElement signInRegister;
-    @FindBy(xpath="//li[@id='account-menu']") public WebElement signInRegister2;
+    @FindBy(xpath="//a[@class='d-flex align-items-center dropdown-toggle nav-link']") public static WebElement signInRegister;
+    @FindBy(xpath="//li[@id='account-menu']") public static WebElement signInRegister2;
 
-    @FindBy(xpath="//span[normalize-space()='Sign in']") public WebElement signIn;
-    @FindBy(xpath="//span[normalize-space()='Register']") public WebElement register;
+    @FindBy(xpath="//span[normalize-space()='Sign in']") public static WebElement signIn;
+    @FindBy(xpath="//span[normalize-space()='Register']") public static WebElement register;
 
-    @FindBy(xpath="//input[@id='ssn']") public WebElement sSN;
-    @FindBy(xpath="//input[@id='firstName']") public WebElement firstName;
-    @FindBy(xpath="//input[@id='lastName']") public WebElement lastName;
-    @FindBy(xpath="//input[@id='username']") public WebElement username;
-    @FindBy(xpath="//input[@id='email']") public WebElement email;
-    @FindBy(xpath="//input[@id='firstPassword']") public WebElement newPassword;
-    @FindBy(xpath="//input[@id='secondPassword']") public WebElement newPasswordConfirmation;
-    @FindBy(xpath="//button[@id='register-submit']//span[contains(text(),'Register')]") public WebElement registerButton;
+    @FindBy(xpath="//input[@id='ssn']") public static WebElement sSN;
+    @FindBy(xpath="//input[@id='firstName']") public static WebElement firstName;
+    @FindBy(xpath="//input[@id='lastName']") public static WebElement lastName;
+    @FindBy(xpath="//input[@id='username']") public static WebElement username;
+    @FindBy(xpath="//input[@id='email']") public static WebElement email;
+    @FindBy(xpath="//input[@id='firstPassword']") public static WebElement newPassword;
+    @FindBy(xpath="//input[@id='secondPassword']") public static WebElement newPasswordConfirmation;
+    @FindBy(xpath="//button[@id='register-submit']//span[contains(text(),'Register')]") public static WebElement registerButton;
 
 
 }

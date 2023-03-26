@@ -12,8 +12,6 @@ public class Deneme {
 //        WebDriver driver = new ChromeDriver();
 //        driver.get("http://amazon.com");
         //MainPage1 mainPage= new MainPage1();
-        Driver dr= new Driver();
-        Didi main = new Didi();
 
         ChromeOptions option = new ChromeOptions();
         option.addArguments("--remote-allow-origins=*");
@@ -26,8 +24,6 @@ public class Deneme {
 
         WebElement register= driver.findElement(By.xpath("//span[normalize-space()='Register']"));
         register.click();
-        driver.findElement(By.xpath("//input[@id='firstName']")).sendKeys("First Name");
-
-
+        driver.findElement(By.xpath("//input[@id='firstName']")).sendKeys(" Name");
     }
 }

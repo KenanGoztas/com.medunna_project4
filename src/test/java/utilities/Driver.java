@@ -14,19 +14,15 @@ public class Driver {
     public static WebDriver driver;
 
     public static WebDriver getDriver() {
-        //System.setProperty("webdriver.chrome.driver", "chromedriver");
-        //Webdriver driver = new ChromeDriver();
-
-        WebDriverManager.chromedriver().setup();
-//        ChromeOptions options=new ChromeOptions();
-//        options.addArguments("--remote-allow-origins=*");
 
         if (driver == null) {
             switch (ConfigReader.getProperties("browser")) {
                 case "chrome":
-                    defalult:
+                    ChromeOptions option = new ChromeOptions();
+                    option.addArguments("--remote-allow-origins=*");
 
-                    driver = new ChromeDriver();
+                    WebDriverManager.chromedriver().setup();
+                     driver = new ChromeDriver(option);
                     break;
                 case "firefox":
                     WebDriverManager.firefoxdriver().setup();
