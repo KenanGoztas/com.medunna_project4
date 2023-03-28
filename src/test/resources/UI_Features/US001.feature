@@ -1,5 +1,6 @@
 Feature: US001
 
+  @us001
   Scenario: Gecerli bir SSN, 3. ve 5. rakamdan sonra "-"  icermeli ve 9 rakamdan olusmalidir
     Given Medunna ana sayfasina gider
     And Ana sayfa giris ikonuna tiklar

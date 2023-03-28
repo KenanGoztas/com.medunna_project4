@@ -14,12 +14,13 @@ public class Driver {
     public static WebDriver driver;
 
     public static WebDriver getDriver() {
-        ChromeOptions option = new ChromeOptions();
-        option.addArguments("--remote-allow-origins=*");
+
         if (driver == null) {
 
             switch (ConfigReader.getProperties("browser")) {
                 case "chrome":
+                    ChromeOptions option = new ChromeOptions();
+                    option.addArguments("--remote-allow-origins=*");
                     WebDriverManager.chromedriver().setup();
                      driver = new ChromeDriver(option);
                     break;

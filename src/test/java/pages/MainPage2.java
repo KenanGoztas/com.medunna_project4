@@ -12,15 +12,16 @@ public class MainPage2 {
     public MainPage2() {
         PageFactory.initElements(Driver.getDriver(), this);
     }
-    @FindBy(className="appointment-btn scrollto")
-    public WebElement makeAnAppointment;
-    @FindBy(xpath="//a[@class='d-flex align-items-center dropdown-toggle nav-link']") public  WebElement signInRegister;
+//    @FindBy(className="appointment-btn scrollto")
+//    public WebElement makeAnAppointment;
+   // @FindBy(xpath="//a[@class='d-flex align-items-center dropdown-toggle nav-link']") public  WebElement signInRegister;
     @FindBy(xpath="//li[@id='account-menu']") public  WebElement signInRegister2;
 
     @FindBy(xpath="//span[normalize-space()='Sign in']") public  WebElement signIn;
     @FindBy(xpath="//span[normalize-space()='Register']") public  WebElement register;
 
     @FindBy(xpath="//input[@id='ssn']") public  WebElement sSN;
+    @FindBy(xpath = "//input[@class='is-touched is-dirty av-valid form-control']") public WebElement ssnValid;
     @FindBy(xpath="//input[@id='firstName']") public  WebElement firstName;
     @FindBy(xpath="//input[@id='lastName']") public  WebElement lastName;
     @FindBy(xpath="//input[@id='username']") public  WebElement username;

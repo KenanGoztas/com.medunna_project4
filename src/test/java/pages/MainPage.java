@@ -9,8 +9,8 @@ public class MainPage {
     public MainPage() {
         PageFactory.initElements(Driver.getDriver(), this);
     }
-    @FindBy(className="appointment-btn scrollto")
-    public WebElement makeAnAppointment;
+//    @FindBy(className="appointment-btn scrollto")
+//    public WebElement makeAnAppointment;
     @FindBy(xpath="//a[@class='d-flex align-items-center dropdown-toggle nav-link']") public static WebElement signInRegister;
     @FindBy(xpath="//li[@id='account-menu']") public static WebElement signInRegister2;
 
